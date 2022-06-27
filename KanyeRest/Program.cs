@@ -22,3 +22,4 @@ string ronUrl = "https://ron-swanson-quotes.herokuapp.com/v2/quotes";
 var ronResponse = client.GetAsync(ronUrl).Result;
 
 //Parse object 
+var ronQuote = JArray.Parse(ronResponse).ToString();
